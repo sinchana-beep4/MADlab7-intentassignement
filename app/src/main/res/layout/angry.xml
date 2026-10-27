@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/angry"
+    android:background="#c40606"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".angry">
+
+    <ImageView
+        android:id="@+id/angryCat"
+        android:layout_width="417dp"
+        android:layout_height="413dp"
+        android:contentDescription="@string/angry_cat"
+        android:scaleType="fitStart"
+        android:src="@drawable/angry_cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hungryText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/angryCat"
+        android:text="@string/im_so_hungry"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedMe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hungryText"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/feed_me"
+        android:backgroundTint="#36a5f5"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

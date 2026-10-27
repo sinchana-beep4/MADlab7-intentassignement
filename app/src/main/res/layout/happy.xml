@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/happy"
+    android:background="#faee41"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/happyCat"
+        android:layout_width="421dp"
+        android:layout_height="642dp"
+        android:contentDescription="@string/happy_cat"
+        android:scaleType="fitStart"
+        android:src="@drawable/happi_cat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hellYeah"
+        android:text="@string/hell_yeah_meow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/happyCat"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
